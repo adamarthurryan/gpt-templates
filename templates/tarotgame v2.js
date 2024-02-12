@@ -34,27 +34,13 @@ export default
         
         {
             prompt,
-            content: `Describe the protagonist in one paragraph. They are represented by the card {{type:"tarotcard"}}.`
-        },
-        {
-            prompt,
-            content: `Describe the situation they are faced with and the goal they need to achieve in one paragraph.  It is represented by the card {{type:"tarotcard"}}.`
-        },
-        {
-            prompt,
-            content: `Describe a strength or asset that supports the achievement of this goal in one paragraph. It is represented by the card {{type:"tarotcard"}}.`
-        },
-        {
-            prompt,
-            content: `Describe a compounding challenge or weakness that is in the way of this goal in one paragraph.  It is represented by the card {{type:"tarotcard"}}.`
-        }, 
-        {
-            prompt,
-            content:`Now describe a scenario for an interactive fiction game. Present a concrete challenge or mission in one paragraph that the character must carry out to further their goal. The situation should be simple and straightforward, but with some interesting twists or complications. The character should have a clear goal, and the player should have a clear idea of what they need to do to achieve it. The situation should be plausible and realistic, but with some interesting twists or complications.`
+            content: `Describe a scenario for an interactive fiction game. Present a concrete challenge or mission in one paragraph that the character must carry out to further their goal. The situation should be simple and straightforward. The character should have a clear goal, and the player should have a clear idea of what they need to do to achieve it. The situation should be plausible and realisticDescribe the character and the challenge or situation they are faced with. 
+            
+            The character is represented by the card {{type:"tarotcard"}}. Their challenge, mission, or situation is represented by the card {{type:"tarotcard"}}.`
         },
         {
             system,
-            content: `You are an assistant in writing an interactive story. You have described the characters and setting, and I will choose the actions for the protagonist to take.
+            content: `You are the dungeon master of an interactive role-playing game. You have described the characters and setting, and I will choose the actions for the protagonist to take.
 
             Your writing style is concise and clear, but imaginative and colourful. Answer concisely in single paragraphs. Keep situations simple and commonplace.
             
