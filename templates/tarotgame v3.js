@@ -17,17 +17,16 @@ export default
             
             Answer concisely in single paragraphs. Keep situations simple and commonplace.`
         },
-        {
-            content: `The game is set in historical ancient greece.
-            `
+        { 
+            content: `The setting of the game is {{type:"input", prompt:"What is the setting?"}}. The genre is {{type:"input", prompt:"What is the genre?"}}. The main character is {{type:"input", prompt:"Describe the main character (ie. yourself)."}}.`
         },
-        
         {
-            prompt,
-            content: `Describe a scenario for an interactive fiction game. Present a concrete challenge or mission in one paragraph that the character must carry out to further their goal. The situation should be simple and straightforward. The character should have a clear goal, and the player should have a clear idea of what they need to do to achieve it. The situation should be plausible and realisticDescribe the character and the challenge or situation they are faced with. 
+            content: `Describe a scenario for an interactive fiction game. Present a concrete challenge or mission in one paragraph that the character must carry out to further their goal. The situation should be simple and straightforward. The character should have a clear goal, and the player should have a clear idea of what they need to do to achieve it. The situation should be plausible and realistic. Describe the character and the challenge or situation they are faced with. `
             
-            The character is represented by the card {{type:"tarotcard"}}. Their challenge, mission, or situation is represented by the card {{type:"tarotcard"}}.`
         },
+        { prompt, echo,
+            content:`The character is represented by the card {{type:"tarotcard"}}. Their challenge, mission, or situation is represented by the card {{type:"tarotcard"}}. Their antagonist or adversary is represented by the card {{type:"tarotcard"}}`
+        }, 
         {
             system,
             content: `You are the dungeon master of an interactive role-playing game. You have described the characters and setting, and I will choose the actions for the protagonist to take.
