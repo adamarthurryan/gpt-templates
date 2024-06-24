@@ -189,7 +189,7 @@ async function transform (content) {
             //add brackets and parse the JSON
             let jsonString = "{"+segments[i]+"}";
             let json;
-            try {
+            try {   
                 json = JSON5.parse(jsonString);
             }
             catch (e) {
