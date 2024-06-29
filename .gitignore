@@ -4,3 +4,5 @@ package-lock.json
 data
 saves
 scratch
+dist/index.js
+dist/index.js.map

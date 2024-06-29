@@ -5,12 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "esbuild client/client.js --bundle --minify --platform=browser --sourcemap --outfile=dist/index.js",
+    "watch": "esbuild client/client.js --bundle --watch --platform=browser --sourcemap --outfile=dist/index.js",
+    "serve": "node server/server.js & npx http-server dist -P http://localhost:3000",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adam Brown <adamarthurryan@gmail.com>",
   "license": "BSD-2-Clause",
   "dependencies": {
     "@inquirer/prompts": "^3.3.2",
+    "browser-fs-access": "^0.35.0",
     "chalk": "^5.3.0",
     "dotenv": "^16.3.1",
     "json5": "^2.2.3",
@@ -18,5 +23,8 @@
     "openai": "^4.26.0",
     "p-queue": "^7.3.4",
     "tarot-deck": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.21.5"
   }
 }
